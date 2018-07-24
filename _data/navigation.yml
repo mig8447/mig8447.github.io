@@ -1,4 +1,6 @@
 main:
+    - title: "$HOME"
+      url: /
     - title: "&lt;tags&gt;"
       url: /tags/
     - title: "Categories"
