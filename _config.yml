@@ -1,8 +1,8 @@
 locale: "en-US"
-title: "Tales of a developer"
+title: "Tales of a Developer"
 title_separator: "|"
 name: "Miguel Sánchez Villafán"
-description: "A blog about mig8447's day to day learnings in the world of software development"
+description: "A blog about mig8447's day to day learning in the world of software development"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mig8447.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "mig8447/mig8447.github.io"
