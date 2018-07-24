@@ -8,6 +8,8 @@ tags:
     - unix
     - gnu
     - linux
+    - commands
+    - terminal
 categories:
     - Linux
 ---
@@ -19,6 +21,7 @@ https://www.linux.org/docs/man1/less.html
 - Moving inside less
 - Searching
 - The +F option
+    - Difference from tail -f
     - Detaching from the end of the file
     - Reattaching to the end of the file (Shift + F)
 -->
