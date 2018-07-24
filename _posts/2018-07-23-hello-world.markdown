@@ -1,5 +1,6 @@
 ---
-title:  "Hello World!"
+title: "Hello World!"
+date: 2018-07-23 18:53:43 -0500
 tags:
     - hello
     - world
