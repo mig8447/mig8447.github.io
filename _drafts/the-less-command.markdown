@@ -14,6 +14,7 @@ categories:
 <!--
 - History
 - Docs
+https://www.linux.org/docs/man1/less.html
 - BSD vs GNU
 - Moving inside less
 - Searching
