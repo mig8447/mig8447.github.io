@@ -1,57 +1,56 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Tales of a developer
-tagline:
-email: mig8447@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-    A blog about mig8447's day to day learnings in the world of software development
+locale: "en-US"
+title: "Tales of a developer"
+title_separator: "|"
+name: "Miguel Sánchez Villafán"
+description: "A blog about mig8447's day to day learnings in the world of software development"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mig8447
-github_username: mig8447
-
+url: "https://mig8447.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "mig8447/mig8447.github.io"
+comments:
+    provider: "disqus"
+    disqus:
+        shortname: "mig8447"
 author:
-    name: Miguel Sánchez Villafán
-    url: http://mig8447.github.io
-
+    name: "Miguel Sánchez Villafán"
+    bio: "Full-time software developer, ocassionally a photographer, and definitely a music lover"
+    avatar: "/assets/images/avatar.jpg"
+    location: "Guadalajara, Jalisco, México"
+    flickr: mig8447
+    github: mig8447
+    linkedin: mig8447
 paginate: 10
+timezone: America/Mexico_City
+category_archive:
+    type: liquid
+    path: /categories/
+tag_archive:
+    type: liquid
+    path: /tags/
+search: true
+og_image: /assets/images/avatar.jpg
 
-version: 1.0.0
-sidebar_home_link: true
-disqus:
-    shortname: mig8447
-github:
-    repo:   https://github.com/mig8447/mig8447.github.io
+defaults:
+    # _posts
+    - scope:
+        path: ""
+        type: posts
+      values:
+        layout: single
+        read_time: true
+        comments: true
+        share: true
+        related: true
+        author_profile: true
 
 # Build settings
 markdown: kramdown
-remote_theme: "fongandrew/hydeout"
+#remote_theme: "fongandrew/hydeout"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
 plugins:
     - jekyll-feed
     - jekyll-gist
     - jekyll-paginate
+    - jekyll-sitemap
+    - jemoji
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
