@@ -21,7 +21,7 @@ categories:
     - Linux
     - Bash
 ---
-This post explores the differences between a null (empty) variable and an unset variable in Bash. It also contains a snippet to check wether a variable is set or not and gives you a usecase so you can give it a real-world application.
+This post explores the differences between a null (empty) variable and an unset variable in Bash. It also contains a snippet to check whether a variable is set or not and gives you a use case so you can give it a real-world application.
 <!--more-->
 
 ## TL;DR
@@ -88,7 +88,7 @@ fi
 
 **Question for you**: Why do we have to double quote the parameter expansion? Comment in the box below, if the answer is in the first 50 comments, I'll put the answer and the name of the commenter in an edit to this post, if the answer is not there, I'll still be putting the answer in an edit. Until then... happy Bash-ing
 
-## Usecase
+## Use case
 One of the most comon usecases for this is to see if a positional parameter in a script was set or intentionally left empty. If we're looping trough our parameters, we would want to stop at the last parameter, not at the first null one. 
 
 ## Glossary
