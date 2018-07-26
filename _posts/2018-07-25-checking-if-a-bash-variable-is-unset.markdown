@@ -1,6 +1,7 @@
 ---
 title: "Checking if a Bash variable is unset"
 date: 2018-07-25 23:37:16 -0500
+excerpt_separator: "<!--more-->"
 toc: true
 toc_sticky: true
 toc_label: "Unset $variables"
@@ -20,9 +21,9 @@ categories:
     - Linux
     - Bash
 ---
-<!--
-When not performing substring expansion, using the form described below (e.g., ‘:-’), Bash tests for a parameter that is unset or null. Omitting the colon results in a test only for a parameter that is unset. Put another way, if the colon is included, the operator tests for both parameter’s existence and that its value is not null; if the colon is omitted, the operator tests only for existence.
--->
+This post explores the differences between a null (empty) variable and an unset variable in Bash. It also contains a snippet to check wether a variable is set or not and gives you a usecase so you can give it a real-world application.
+<!--more-->
+
 ## TL;DR
 Check if unset
 ```
