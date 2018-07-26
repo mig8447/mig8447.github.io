@@ -66,7 +66,7 @@ According to the [parameter expansion documentation](https://www.gnu.org/softwar
 
 So yes, `"${variable:+set}"` will expand to nothing (aka an empty string, aka a null value) if parameter is unset, But it will also do it if the parameter is null!, which defeats our purpose once again.
 
-## Difference between a set variable and a null variable
+## A null variable vs an unset variable
 So why all of this? There's a fundamental thing to understand here, a null (empty) variable is NOT the same as an unset variable. The difference is basically that the empty variable is part of the environment on which I'm running my commands and an unset variable is not. 
 
 For non-bash "speakers" a null variable is the equivalent of a variable set to an empty string in any other language, while an unset variable would be the equivalent of not declaring the variable at all. Who can tell me what happens in Java if a variable I'm using somewhere is not declared? The code won't compile!. The world isn't that black or white with Bash though (Again, except if you set the -u option in Bash), bash will gladly compare an unset variable to whatever you want, Why is it a problem? Besides what I would explain in the `-u` post, because sometimes you want to have the ability to discern if a user did not set a variable or if it was set to an empty value on purpose, in our Java example this would be comparable to have the ability to discern between a `null` object and an "empty" one, which is IMHO a fundamental ability to have.
