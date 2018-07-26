@@ -2,7 +2,8 @@
 title: "Checking if a Bash variable is unset"
 date: 2018-07-25 23:37:16 -0500
 toc: true
-toc_label: "Check for unset $variable"
+toc_sticky: true
+toc_label: "Unset $variables"
 toc_icon: terminal
 tags:
     - bash
