@@ -1,6 +1,6 @@
 ---
 title: "Checking if a Bash variable is unset"
-date: 2018-06-25 23:37:16 -0500
+date: 2018-07-25 23:37:16 -0500
 toc: true
 tags:
     - bash
