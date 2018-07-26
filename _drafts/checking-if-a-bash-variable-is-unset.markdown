@@ -82,12 +82,14 @@ if [[ -z "${variable+set}" ]]; then
 fi
 ```
 
-**Question for you**: Why do we have to double quote the parameter expansion?
+**Question for you**: Why do we have to double quote the parameter expansion? Comment in the box below, if the answer is in the first 50 comments, I'll put the answer and the name of the commenter in an edit to this post, if the answer is not there, I'll still be putting the answer in an edit. Until then... happy Bash-ing
 
 # Usecases
 One of the most comon usecases for this is to see if a positional parameter in a script was set or intentionally left empty. If we're looping trough our parameters, we would want to stop at the last parameter, not at the first null one. 
 
 # Glossary
 **TL;DR**: Too Long; Didn't Read (See https://blog.oxforddictionaries.com/august-2013-update/)
+
 **aka**: Also Known As
+
 **IMHO**: In My Humble Opinion
