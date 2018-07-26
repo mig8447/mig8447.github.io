@@ -88,8 +88,6 @@ fi
 One of the most comon usecases for this is to see if a positional parameter in a script was set or intentionally left empty. If we're looping trough our parameters, we would want to stop at the last parameter, not at the first null one. 
 
 # Glossary
-**TL;DR**: Too Long; Didn't Read (See https://blog.oxforddictionaries.com/august-2013-update/)
-
-**aka**: Also Known As
-
-**IMHO**: In My Humble Opinion
+**TL;DR**: Too Long; Didn't Read (See https://blog.oxforddictionaries.com/august-2013-update/)  
+**aka**: Also Known As  
+**IMHO**: In My Humble Opinion  
