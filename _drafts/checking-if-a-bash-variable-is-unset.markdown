@@ -37,6 +37,7 @@ fi
 # How NOT to do it
 ## Wrong solution number 1
 You're doing it wrong
+
 ```
 if [[ -z "$variable" ]]; then
     echo 'unset';
@@ -48,11 +49,13 @@ According to the [conditional expressions documentation](https://www.gnu.org/sof
 
 ## Wrong solution number 2
 Almost! but not quite
+
 ```
 if [[ -z "${variable:+set}" ]]; then
     echo 'unset';
 fi
 ```
+
 ### Why?
 According to the [parameter expansion documentation](https://www.gnu.org/software/bash/manual/bashref.html#Shell-Parameter-Expansion-1):
 > `${parameter:+word}`
@@ -61,19 +64,28 @@ According to the [parameter expansion documentation](https://www.gnu.org/softwar
 So yes, `"${variable:+set}"` will expand to nothing (aka an empty string, aka a null value) if parameter is unset, But it will also do it if the parameter is null!, which defeats our purpose once again.
 
 # Difference between a set variable and a null variable
-So why all of this? There's a fundamental thing to understand here, a null (empty) variable is NOT the same as an unset variable.
-The difference is basically that the empty variable is part of the environment on which I'm running my commands and an unset variable is not. 
+So why all of this? There's a fundamental thing to understand here, a null (empty) variable is NOT the same as an unset variable. The difference is basically that the empty variable is part of the environment on which I'm running my commands and an unset variable is not. 
 
-For non-bash "speakers" a null variable is the equivalent of a variable set to an empty string in any other language, while an unset variable would be the equivalent of not declaring the variable at all. 
-Who can tell me what happens in Java if a variable I'm using somewhere is not declared? The code won't compile!.
-The world isn't that black or white with Bash though (Again, except if you set the -u option in Bash), bash will gladly compare an unset variable to whatever you want, Why is it a problem? Because, sometimes you want to have the ability to discern if a user did not set a variable or if it was set to an empty value on purpose, in our Java example this would be comparable to have the ability to discern between a `null` object and an "empty" one, which is IMHO a fundamental ability to have.
+For non-bash "speakers" a null variable is the equivalent of a variable set to an empty string in any other language, while an unset variable would be the equivalent of not declaring the variable at all. Who can tell me what happens in Java if a variable I'm using somewhere is not declared? The code won't compile!. The world isn't that black or white with Bash though (Again, except if you set the -u option in Bash), bash will gladly compare an unset variable to whatever you want, Why is it a problem? Besides what I would explain in the `-u` post, because sometimes you want to have the ability to discern if a user did not set a variable or if it was set to an empty value on purpose, in our Java example this would be comparable to have the ability to discern between a `null` object and an "empty" one, which is IMHO a fundamental ability to have.
 
-# The Bash's `[[` Conditional Construct
-https://www.gnu.org/software/bash/manual/bash.html#Conditional-Constructs-1
-# Bash's parameter expansion
-## The `+` expansion
 ## Look ma!, no colon
+So [Wrong solution number 2](#wrong-solution-number-2) almost had it, it was making use of parameter expansion, it was making use of the `-z` operator, but it fell short in a small-but-very-important-thing: The colon `:`. If only the developer who wrote it had read a couple of lines above the [parameter expansion definitions](https://www.gnu.org/software/bash/manual/bashref.html#Shell-Parameter-Expansion-1) he would have noticed the following:
+> When not performing substring expansion, using the form described below (e.g., ‘:-’), Bash tests for a parameter that is unset or null. Omitting the colon results in a test only for a parameter that is unset. Put another way, if the colon is included, the operator tests for both parameter’s existence and that its value is not null; if the colon is omitted, the operator tests only for existence.
+
+> [...] if the colon is omitted, the operator tests only for existence.
+
+Tada :tada:!, so the solution, is to remove the colon `:` from the [Wrong solution number 2](#wrong-solution-number-2) code, which leaves us with:
+
+```
+if [[ -z "${variable+set}" ]]; then
+    echo 'unset';
+fi
+```
+
+**Question for you**: Why do we have to double quote the parameter expansion?
+
 # Usecases
+One of the most comon usecases for this is to see if a positional parameter in a script was set or intentionally left empty. If we're looping trough our parameters, we would want to stop at the last parameter, not at the first null one. 
 
 # Glossary
 **TL;DR**: Too Long; Didn't Read (See https://blog.oxforddictionaries.com/august-2013-update/)
