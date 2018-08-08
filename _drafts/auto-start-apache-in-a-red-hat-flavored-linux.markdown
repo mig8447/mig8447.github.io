@@ -1,6 +1,5 @@
 # /usr/lib/systemd/system/httpd.service
-
-
+```
 [Unit]
 Description=The Apache HTTP Server
 After=network.target remote-fs.target nss-lookup.target
@@ -28,3 +27,6 @@ PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
+```
+#systemctl enable httpd.service
+#systemctl start httpd.service
