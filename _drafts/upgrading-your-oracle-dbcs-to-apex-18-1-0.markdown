@@ -12,8 +12,9 @@ categories:
     - dbcs
     - apex
 ---
+
 The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
 
-#Who is this guide for?
+# Who is this guide for?
 This guide is intended for users wanting to 
