@@ -17,4 +17,4 @@ The views expressed here are my own and do not necessarily reflect the views of 
 {: .notice}
 
 # Who is this guide for?
-This guide is intended for users wanting to 
+This guide is intended for users wanting to upgrade the APEX version
