@@ -45,7 +45,7 @@ defaults:
 # Build settings
 markdown: kramdown
 #remote_theme: "fongandrew/hydeout"
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mig8447/minimal-mistakes"
 minimal_mistakes_skin: "default"
 plugins:
     - jekyll-feed
