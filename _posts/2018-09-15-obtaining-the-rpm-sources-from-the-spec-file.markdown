@@ -34,7 +34,11 @@ SourceN: <FILE_OR_URL_FOR_SOURCEN>
 So if I already have the spec file, and I can read it, Why do I need this?
 Fair question, but, what would you do if you want to have a dynamic spec or more so, a dynamic build script that reads the sources from the spec and downloads them or even builds them with some scripts you have available.
 In summary: automation is the why.
-Of course you could have something like `grep -iE 'Source[0-9]+:' <SPEC_FILE_PATH>` to do it, but what if your source strings are built within the spec given certain macros?
+Of course you could have something like:
+```bash
+grep -iE 'Source[0-9]+:' <SPEC_FILE_PATH>
+```
+to do it, but what if your source strings are built within the spec given certain macros?
 With the above `grep` command you'd get the macros that comprise the sources, and you'd have to parse the file to find the right definition for the source file.
 
 ## Pre-requisites
