@@ -1,11 +1,11 @@
 main:
     - title: "$HOME"
       url: /
+    - title: "TIL"
+      url: /today-i-learned/
     - title: "&lt;tags&gt;"
       url: /tags/
     - title: "Categories"
       url: /categories/
-    - title: "TIL"
-      url: /today-i-learned/
     - title: "About"
       url: /about/
