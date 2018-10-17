@@ -29,6 +29,7 @@ This guide is intended to be followed within a DBCS deployment. Paths and some o
 
 - A DBCS deployment
 - A local (Per-PDB) APEX 5.1.x installation. This means that APEX should not be installed at the CDB level. To check for this you can connect to your CDB using SQL Developer or your preferred SQL tool and run the following command:
+  
   ```sql
   SELECT
       VERSION,
@@ -41,6 +42,7 @@ This guide is intended to be followed within a DBCS deployment. Paths and some o
   ```
   If you get no results from the above then you're good to go
 - The target PDB for the upgrade should be in Read/Write mode, for the rest of this our target PDB will be called `PDB1`. To verify this is the case you can connecto to your target PDB as a DBA user and run:
+  
   ```sql
   SELECT
       V$INSTANCE.STATUS,
