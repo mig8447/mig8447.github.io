@@ -21,10 +21,10 @@ published: true
 This post is an upgrade guide from APEX 5.1.x to APEX 18.2.0 in an Oracle Database Cloud Service (DBCS) deployment
 <!--more-->
 
-The views expressed here are my own and do not necessarily reflect the views of Oracle
+The guide in this article was tested in a DBCS environment which met the pre-requisites depicted in it, nevertheless, configuration may vary from environment to envvironment. **Any action you take upon the information presented in this article is strictly at your own risk**, and we will not be liable for any losses and damages in connection with this article
 {: .notice}
 
-The guide in this article was tested in a DBCS environment which met the pre-requisites depicted in it, nevertheless, configuration may vary from environment to envvironment. **Any action you take upon the information presented in this article is strictly at your own risk**, and we will not be liable for any losses and damages in connection with this article
+The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
 
 ## Pre-requisites
