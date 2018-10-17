@@ -1,16 +1,19 @@
 ---
 title: "Upgrading your Oracle Database Cloud Service to APEX 18.1.0"
-date: 2018-07-24 13:08:00 -0500
+date: 2018-09-16 20:48:11 -0500
 toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
+toc_icon: terminal
 tags:
     - oracle
     - upgrade
     - apex
     - dbcs
 categories:
-    - oracle
-    - dbcs
-    - apex
+    - Oracle
+    - DBCS
+    - APEX
 ---
 This post is an upgrade guide from APEX 5.1.x to APEX 18.1.0 or 18.2.0 in an Oracle Database Cloud Service (DBCS) deployment
 <!--more-->
