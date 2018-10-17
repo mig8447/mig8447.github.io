@@ -28,14 +28,25 @@ This guide is intended to be followed within a DBCS deployment. Paths and some o
 {: .notice--danger}
 
 - A DBCS deployment
-- A local (Per-PDB) APEX 5.1.x installation. This means that APEX should not be installed at the CDB level. To check for this you can connect to your CDB using `SQL Developer` and run the following command:
+- A local (Per-PDB) APEX 5.1.x installation. This means that APEX should not be installed at the CDB level. To check for this you can connect to your CDB using SQL Developer or your preferred SQL tool and run the following command:
   ```sql
-  SELECT VERSION, STATUS, SCHEMA FROM DBA_REGISTRY WHERE COMP_ID = 'APEX';
+  SELECT
+      VERSION,
+      STATUS,
+      SCHEMA
+  FROM
+      DBA_REGISTRY
+  WHERE
+      COMP_ID = 'APEX';
   ```
   If you get no results from the above then you're good to go
 - The target PDB for the upgrade should be in Read/Write mode, for the rest of this our target PDB will be called `PDB1`. To verify this is the case you can connecto to your target PDB as a DBA user and run:
   ```sql
-  SELECT V$INSTANCE.STATUS, V$DATABASE.OPEN_MODE FROM V$INSTANCE CROSS JOIN V$DATABASE
+  SELECT
+      V$INSTANCE.STATUS,
+      V$DATABASE.OPEN_MODE
+  FROM
+      V$INSTANCE CROSS JOIN V$DATABASE;
   ```
   If the output from the above contains the `OPEN` value in the `STATUS` column and the `READ WRITE` value in the `OPEN_MODE` column then you're good to go
 
