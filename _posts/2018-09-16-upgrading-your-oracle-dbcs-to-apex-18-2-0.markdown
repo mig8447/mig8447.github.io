@@ -1,5 +1,5 @@
 ---
-title: "Upgrading your Oracle Database Cloud Service to APEX 18.1.0"
+title: "Upgrading your Oracle Database Cloud Service to APEX 18.2.0"
 date: 2018-09-16 20:48:11 -0500
 toc: true
 toc_sticky: true
@@ -18,14 +18,14 @@ categories:
     - APEX
 published: true
 ---
-This post is an upgrade guide from APEX 5.1.x to APEX 18.1.0 or 18.2.0 in an Oracle Database Cloud Service (DBCS) deployment
+This post is an upgrade guide from APEX 5.1.x to APEX 18.2.0 in an Oracle Database Cloud Service (DBCS) deployment
 <!--more-->
 
 The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
 
-The guilde in this article was tested in a DBCS environment which met the pre-requisites depicted in it, nevertheless, configuration may vary from environment to envvironment. **Any action you take upon the information presented in this article is strictly at your own risk**, and we will not be liable for any losses and damages in connection with this article
-{: .notice--danger}
+The guide in this article was tested in a DBCS environment which met the pre-requisites depicted in it, nevertheless, configuration may vary from environment to envvironment. **Any action you take upon the information presented in this article is strictly at your own risk**, and we will not be liable for any losses and damages in connection with this article
+{: .notice}
 
 ## Pre-requisites
 This guide is intended to be followed within a DBCS deployment. Paths and some of the instructions are specific to those kinds of environments and as such, any non-DBCS environment may differ from what's depicted here
@@ -57,7 +57,7 @@ This guide is intended to be followed within a DBCS deployment. Paths and some o
   ```
   
   If the output from the above contains the `OPEN` value in the `STATUS` column and the `READ WRITE` value in the `OPEN_MODE` column then you're good to go
-- The APEX ZIP file for the desired version. You can download it from [OTN](https://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
+- The APEX 18.2.0 ZIP file for the desired version. You can download it from [OTN](https://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
 - A maintenance window of approximately 20 minutes during which APEX will be down while upgrading in the target PDB
 
 
