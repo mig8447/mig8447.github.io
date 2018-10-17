@@ -16,7 +16,7 @@ categories:
     - Oracle
     - DBCS
     - APEX
-published: true
+published: false
 ---
 This post is an upgrade guide from APEX 5.1.x to APEX 18.2.0 in an Oracle Database Cloud Service (DBCS) deployment
 <!--more-->
@@ -29,7 +29,7 @@ The views expressed here are my own and do not necessarily reflect the views of 
 
 ## Pre-requisites
 This guide is intended to be followed within a DBCS deployment. Paths and some of the instructions are specific to those kinds of environments and as such, any non-DBCS environment may differ from what's depicted here
-{: .notice--danger}
+{: .notice}
 
 - A DBCS deployment
 - A local (Per-PDB) APEX 5.1.x installation. This means that APEX should not be installed at the CDB level. To check for this you can connect to your CDB using SQL Developer or your preferred SQL tool and run the following command:
