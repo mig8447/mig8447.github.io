@@ -16,12 +16,16 @@ categories:
     - Oracle
     - DBCS
     - APEX
+published: true
 ---
 This post is an upgrade guide from APEX 5.1.x to APEX 18.1.0 or 18.2.0 in an Oracle Database Cloud Service (DBCS) deployment
 <!--more-->
 
 The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
+
+The guilde in this article was tested in a DBCS environment which met the pre-requisites depicted in it, nevertheless, configuration may vary from environment to envvironment. **Any action you take upon the information presented in this article is strictly at your own risk**, and we will not be liable for any losses and damages in connection with this article
+{: .notice--danger}
 
 ## Pre-requisites
 This guide is intended to be followed within a DBCS deployment. Paths and some of the instructions are specific to those kinds of environments and as such, any non-DBCS environment may differ from what's depicted here
@@ -40,6 +44,7 @@ This guide is intended to be followed within a DBCS deployment. Paths and some o
   WHERE
       COMP_ID = 'APEX';
   ```
+  
   If you get no results from the above then you're good to go
 - The target PDB for the upgrade should be in Read/Write mode, for the rest of this our target PDB will be called `PDB1`. To verify this is the case you can connecto to your target PDB as a DBA user and run:
   
@@ -50,7 +55,12 @@ This guide is intended to be followed within a DBCS deployment. Paths and some o
   FROM
       V$INSTANCE CROSS JOIN V$DATABASE;
   ```
+  
   If the output from the above contains the `OPEN` value in the `STATUS` column and the `READ WRITE` value in the `OPEN_MODE` column then you're good to go
+- The APEX ZIP file for the desired version. You can download it from [OTN](https://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
+- A maintenance window of approximately 20 minutes during which APEX will be down while upgrading in the target PDB
+
+
 
 
 
