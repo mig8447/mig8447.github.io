@@ -4,9 +4,11 @@ date: 2018-09-16 20:48:11 -0500
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-toc_icon: terminal
+toc_icon: cloud
 tags:
     - oracle
+    - database
+    - cloud
     - upgrade
     - apex
     - dbcs
