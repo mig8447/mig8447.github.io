@@ -28,12 +28,13 @@ Users commit their day-to-day work on `/branches/development` abiding to the fol
 3. If the change set(s) required to complete a particular feature or fix are too big and could potentially break development, disrupting other users' day to day work, then a branch should be created and small/reviewable change sets should be committed to such branch, which must also be kept in sync with `/branches/development` so that merging the branch when the feature/fix is complete causes the least possible pain
 4. Once work in development is stable and passes the tests, `/branches/development` should be merged into `/trunk`
 5. /trunk must compile and pass tests at all times. Committers who violate this rule must fix trunk at their earliest and backport their changes to `/branches/development` once the problem is fixed
+6. Tagging `/trunk` in a per-release basis is mandatory
 
 ## Pros
 
 - `/trunk` is guaranteed to be stable at all times
-- User's daily work is kept seamless within `/branches/development`
+- User's daily workflow is kept seamless within `/branches/development`
 
 ## Cons
 
-- Merging from `/branches/development` to `/trunk` may become a hassle under rare circumstances but it's worth the peace of mind that committing everything at the end of the day and go home brings
+- Merging from `/branches/development` to `/trunk` may become a hassle under rare circumstances but it's worth the peace of mind that committing everything at the end of the day and going home brings
