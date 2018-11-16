@@ -2,6 +2,8 @@
 title: "The Branch-When-Needed extended branching system"
 date: 2018-10-15 21:01:26 +0600
 toc: true
+toc_label: "Table of Contents"
+toc_icon: terminal
 tags:
     - scm
     - svn
