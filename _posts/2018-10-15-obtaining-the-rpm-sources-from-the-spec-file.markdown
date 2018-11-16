@@ -1,6 +1,6 @@
 ---
 title: "Obtaining the RPM sources from the spec file"
-date: 2018-09-15 13:00:07 -0500
+date: 2018-10-15 13:00:07 -0500
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
