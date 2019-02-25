@@ -23,7 +23,7 @@ The views expressed here are my own and do not necessarily reflect the views of 
 
 # TL;DR
 
-You can download the finished application from [orders_app.apex.sql]({{ "/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql" | relative_url }}). It includes the data in the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
+You can download the finished application from [orders_app.apex.sql](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql). It includes the data in the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
 
 # Step by Step Tutorial
 
