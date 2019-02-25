@@ -46,7 +46,7 @@ defaults:
 markdown: kramdown
 # Disable smart quotes
 kramdown:
-    smart_quotes: apos, apos, quot, quot
+    smart_quotes: apos,apos,quot,quot
 #remote_theme: "fongandrew/hydeout"
 remote_theme: "mig8447/minimal-mistakes"
 minimal_mistakes_skin: "default"
