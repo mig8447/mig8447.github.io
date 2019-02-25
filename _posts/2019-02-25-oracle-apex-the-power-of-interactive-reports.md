@@ -229,7 +229,7 @@ Click on the "Actions" menu once more and select the "Compute" option from the "
 
 Type "Order Year" as the "Column Heading" and get the following on the "Computation Expression" 
 
-`TO_CHAR( B, ‘YYYY' )`
+`TO_CHAR( B, 'YYYY' )`
 
 Once more, make sure the letter B corresponds to the "Order Date" in the "Columns" list and if not, please change it for the corresponding letter in the "Computation Expression". Click "Apply"
 
