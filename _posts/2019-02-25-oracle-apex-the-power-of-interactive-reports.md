@@ -21,11 +21,11 @@ This post intends to be an in-depth tutorial on Oracle APEX's Interactive Report
 The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
 
-# TL;DR
+## TL;DR
 
 You can download the finished application from [orders_app.apex.sql](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql). It includes the data in the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
 
-# Step by Step Tutorial
+## Step by Step Tutorial
 
 APEX was designed with Database Applications in mind. Nowadays many people perform their day to day management with a spreadsheet software, it might seem simpler than getting a database set up for the task, but it really isn't. What if you had to share your excel file with your other store locations? Would you share it via e-mail? How would your changes be synced?
 
