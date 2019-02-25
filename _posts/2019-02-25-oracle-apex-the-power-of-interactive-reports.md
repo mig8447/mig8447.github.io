@@ -23,7 +23,7 @@ The views expressed here are my own and do not necessarily reflect the views of 
 
 Take a look at other posts in this series: 
 
-- [Oracle Application Express (APEX) - An Overview]({{ site.baseurl }}{% link _posts/2019-02-24-oracle-apex-an-overview.md %})
+- [Oracle Application Express (APEX) - An Overview]({{ site.baseurl }}{% link _posts/2019-02-25-oracle-apex-an-overview.md %})
 
 ## TL;DR
 
