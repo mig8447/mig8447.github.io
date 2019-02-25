@@ -37,6 +37,8 @@ With APEX you have the power to change that with just a few clicks. Just upload 
 
 The following steps will provide guidance on how to build an APEX Application from an orders spreadsheet and how to make APEX's Interactive Reports work for you.
 
+### Creating an Application from a Spreadsheet
+
 Once you have an APEX workspace set up and have accessed it. A screen like the following should appear:
 
 <figure>
@@ -44,7 +46,8 @@ Once you have an APEX workspace set up and have accessed it. A screen like the f
     <figcaption>Application Builder Main Page</figcaption>
 </figure>
 
-Click on the Create button. This will take you to the "Create an Application" page, where you can choose from a range of options to start creating your application. 
+Click on the Create button. This will take you to the "Create an Application" page, where you can choose from a range of options to start creating your application.
+
 <figure>
     <a href="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/002.png"><img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/002.png"></a>
     <figcaption>Create an Application</figcaption>
@@ -64,7 +67,12 @@ You will be presented with two options. Pick "From a file".
     <figcaption>From a Spreadsheet - Step 2</figcaption>
 </figure>
 
-Next to this file you should have found the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file. Pick such file in the "Text File" file browser, then enter a comma `,` as the "Separator" if nor already there and enter a double quotation mark `"` as the "Optionally Enclosed By" field. Click the "Next" button at the bottom of the page and wait for the file to be uploaded.
+#### Uploading the Spreadsheet
+
+Download the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file. Pick such file in the "Text File" file browser, then enter a comma `,` as the "Separator" if nor already there and enter a double quotation mark `"` as the "Optionally Enclosed By" field. Click the "Next" button at the bottom of the page and wait for the file to be uploaded.
+
+The `"` character is necessary for this particular data set to work correctly, if you fail to put this quote, the data loading will succeed but, the data types will be wrong and some extra troubleshooting steps will be needed to get you back on track
+{: .notice--danger}
 
 After a few seconds the below screen will appear:
 
@@ -75,7 +83,7 @@ After a few seconds the below screen will appear:
 
 <!-- TODO: Put the values as code and decide how to indicate the fields -->
 
-Write "ORDERS" in the "Table Name" field and then type "DD/MM/YY" in the "Format" row of the "ORDER_DATE" column. Continue by clicking the "Load Spreadsheet" button at the bottom of the page.
+Write "ORDERS" in the "Table Name" field and then type "DD/MM/YY" in the "Format" row for all of the columns whose type is "DATE". Continue by clicking the "Load Spreadsheet" button at the bottom of the page.
 
 After the file is loaded the following screen will be shown.
 
@@ -83,6 +91,8 @@ After the file is loaded the following screen will be shown.
     <a href="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/006.png"><img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/006.png"></a>
     <figcaption>From a Spreadsheet - Step 4</figcaption>
 </figure>
+
+#### Configuring the Application
 
 Then, click on "Continue to Create Application Wizard" button.
 
@@ -99,6 +109,8 @@ The "Application Builder" is displayed with our application, for which six pages
     <a href="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/008.png"><img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/008.png"></a>
     <figcaption>Application Builder - ORDERS Application</figcaption>
 </figure>
+
+#### Running the Application
 
 Click on the "Run Application" icon at the middle of the page. The application user login will appear.
 
@@ -126,6 +138,8 @@ A form will appear, this was created automatically based upon the uploaded data.
 </figure>
 
 It will allow you to get new data into the database you now have. Scroll down and click on the "Cancel" button. We will now remove the clutter from our report.
+
+### Unleashing the Power of the APEX Interactive Reports
 
 Sometimes there's data in the report we don't always need to see. With the help of APEX's interactive reports we can select the data columns we want to see. Click in the "Actions" menu next to the search bar and then pick the "Columns" option from the menu. A dialog will appear.
 
@@ -161,6 +175,8 @@ Select the "Primary" option and click "Apply". By doing this we're telling APEX 
 
 Once someone enters the Orders page they will see the report as it is now. Now lets make it more interesting.
 
+#### Data Computations - Normalizing the Product Names
+
 Click on the "Actions" menu once more and hover over the "Data" option, then pick the "Compute" option in the sub-menu. We will now generate a couple of columns that are said to be "computed", meaning that such columns will have calculated values, normally depending on the original report columns.
 
 <figure>
@@ -182,6 +198,8 @@ Make sure the Q letter corresponds to the "Product Name" column under the "Colum
 We now see the "Uppercase Product Name" at the right side of our report. This column will be useful because the Orders.csv file contained product names that were just different in the character case used. With the "Uppercase Product Name" column we have something that we know will be different independently of the character case it is written on.
 
 Can we have a "Sales by Product" report? Yes. Interactive Reports allow us to group things by one or more columns.
+
+#### Grouping Data - Creating a "Sales by Product" Report
 
 Click on the "Actions" menu and select the "Group By" option. A dialog will open.
 
@@ -220,6 +238,9 @@ Select the "Reset" option from the sub-menu "Report" in the "Actions" menu to ge
 </figure>
 
 Click "Apply" on the dialog that appears. And it will get back to the saved report. We'll now create another computed column for the year of the sale.
+
+#### Data Computations - Obtaining the Full Year from a Date
+
 Click on the "Actions" menu once more and select the "Compute" option from the "Data" submenu.
 
 <figure>
@@ -237,6 +258,8 @@ Once more, make sure the letter B corresponds to the "Order Date" in the "Column
     <a href="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/023.png"><img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/023.png"></a>
     <figcaption>Orders Report - Created Order Year Column</figcaption>
 </figure>
+
+#### Grouping Data - Creating a "Sales By Year" Report
 
 Back to the report, lets create a new "Group By" by selecting such option from the "Actions" menu.
 
@@ -260,6 +283,8 @@ We now have a "Sales by Year" report. Let's save it.
 </figure>
 
 Save it as a "Named Report" and name it "Sales by Year". Then click "Apply" Now lets get a chart from the displayed data.
+
+#### Charting Data - Creating a "Sales By Year" Chart 
 
 Click on the "X" button next to the "Edit Group By" element just below the search bar.
 
@@ -285,6 +310,8 @@ You now have a chart of "Sales by Year".
 </figure>
 
 Save it as a named report and give it the name "Sales by Year (Chart)". Then click "Apply".
+
+#### Named vs Default reports
 
 Notice you now have three Private reports. Private reports are only visible by their developer. This can be useful when creating or modifying a report without modifying the user's report list. Now that our reports are ready, let's make them available for the users.
 
