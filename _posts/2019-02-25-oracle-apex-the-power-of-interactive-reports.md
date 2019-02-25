@@ -21,7 +21,7 @@ This post intends to be an in-depth tutorial on Oracle APEX's Interactive Report
 The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
 
-Take a look at other posts in this series:
+Take a look at other posts in this series: 
 
 - [Oracle Application Express (APEX) - An Overview]({{ site.baseurl }}{% link _posts/2019-02-24-oracle-apex-an-overview.md %})
 
