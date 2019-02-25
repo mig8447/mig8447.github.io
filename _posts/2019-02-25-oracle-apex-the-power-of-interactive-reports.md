@@ -2,6 +2,7 @@
 title: "Oracle APEX - The Power of Interactive Reports"
 date: 2019-02-25 04:17:21 +0600
 toc: true
+toc_max_header: 4
 toc_sticky: true
 toc_label: "Table of Contents"
 toc_icon: terminal
