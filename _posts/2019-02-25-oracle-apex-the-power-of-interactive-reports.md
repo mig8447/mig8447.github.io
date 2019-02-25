@@ -23,7 +23,7 @@ The views expressed here are my own and do not necessarily reflect the views of 
 
 # TL;DR
 
-You can download the finished application from [`orders_app.apex.sql`](../assets/files/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql). It includes the data in the [`Orders.csv`](../assets/files/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
+You can download the finished application from [orders_app.apex.sql](../assets/files/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql). It includes the data in the [Orders.csv](../assets/files/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
 
 # Step by Step Tutorial
 
@@ -48,7 +48,7 @@ You will be presented with two options. Pick "From a file".
 
 ![From a Spreadsheet - Step 2](../assets/images/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/004.png)
 
-Next to this file you should have found the [`Orders.csv`](../assets/files/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file. Pick such file in the "Text File" file browser, then enter a comma `,` as the "Separator" if nor already there and enter a double quotation mark `"` as the "Optionally Enclosed By" field. Click the "Next" button at the bottom of the page and wait for the file to be uploaded.
+Next to this file you should have found the [Orders.csv](../assets/files/_posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file. Pick such file in the "Text File" file browser, then enter a comma `,` as the "Separator" if nor already there and enter a double quotation mark `"` as the "Optionally Enclosed By" field. Click the "Next" button at the bottom of the page and wait for the file to be uploaded.
 
 After a few seconds the below screen will appear:
 
