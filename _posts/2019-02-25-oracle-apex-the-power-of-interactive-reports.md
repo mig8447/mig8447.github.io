@@ -21,6 +21,10 @@ This post intends to be an in-depth tutorial on Oracle APEX's Interactive Report
 The views expressed here are my own and do not necessarily reflect the views of Oracle
 {: .notice}
 
+Take a look at other posts in this series:
+
+- [Oracle Application Express (APEX) - An Overview]({{ site.baseurl }}{% link _posts/2019-02-24-oracle-apex-an-overview.md %})
+
 ## TL;DR
 
 You can download the finished application from [orders_app.apex.sql](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql). It includes the data in the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
