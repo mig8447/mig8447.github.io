@@ -23,6 +23,10 @@ The views expressed here are my own and do not necessarily reflect the views of 
 This article is a work in progress
 {: .notice--info}
 
+Take a look at other posts in this series:
+
+- [Oracle APEX - The Power of Interactive Reports]({{ site.baseurl }}{% link _posts/2019-02-25-oracle-apex-the-power-of-interactive-reports.md %})
+
 ## A Rapid Application Development Environment (RAD)
 
 Oracle APEX is an application development environment that enables its users to create secure, robust, responsive, and accessible applications fast. APEX is intended to create Data-driven applications, this is, applications that require data, and therefore a Database (Specifically an Oracle Database) to work.
