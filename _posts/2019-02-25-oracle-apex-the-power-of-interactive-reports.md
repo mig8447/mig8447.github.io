@@ -36,27 +36,27 @@ The following steps will provide guidance on how to build an APEX Application fr
 Once you have an APEX workspace set up and have accessed it. A screen like the following should appear:
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/001.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/001.png">
     <figcaption>Application Builder Main Page</figcaption>
 </figure>
 
 Click on the Create button. This will take you to the "Create an Application" page, where you can choose from a range of options to start creating your application. 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/002.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/002.png">
     <figcaption>Create an Application</figcaption>
 </figure>
 
 Click on "From a spreadsheet" button.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/003.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/003.png">
     <figcaption>From a Spreadsheet - Step 1</figcaption>
 </figure>
 
 You will be presented with two options. Pick "From a file".
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/004.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/004.png">
     <figcaption>From a Spreadsheet - Step 2</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Next to this file you should have found the [Orders.csv](/assets/files/posts/201
 After a few seconds the below screen will appear:
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/005.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/005.png">
     <figcaption>From a Spreadsheet - Step 3</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ Write "ORDERS" in the "Table Name" field and then type "DD/MM/YY" in the "Format
 After the file is loaded the following screen will be shown.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/006.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/006.png">
     <figcaption>From a Spreadsheet - Step 4</figcaption>
 </figure>
 
@@ -85,21 +85,21 @@ Then, click on "Continue to Create Application Wizard" button.
 Enter "ORDERS" into the "Name" field and click the "Create Application" button at the bottom of the page.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/007.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/007.png">
     <figcaption>Create an Application</figcaption>
 </figure>
 
 The "Application Builder" is displayed with our application, for which six pages have been created.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/008.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/008.png">
     <figcaption>Application Builder - ORDERS Application</figcaption>
 </figure>
 
 Click on the "Run Application" icon at the middle of the page. The application user login will appear.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/009.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/009.png">
     <figcaption>ORDERS Application - Login Page</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ Enter your workspace login details and click on the "Sign In" button.
 You will now see the Home Page, click on the "Orders" button from the page or from the navigation menu. Then a report with all the uploaded data will be shown.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/010.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/010.png">
     <figcaption>ORDERS Application - Orders Page</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ Doesn't seem like much, but wait to see the following. Now click on one of the p
 A form will appear, this was created automatically based upon the uploaded data.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/011.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/011.png">
     <figcaption>ORDERS Application - Orders Form</figcaption>
 </figure>
 
@@ -126,14 +126,14 @@ It will allow you to get new data into the database you now have. Scroll down an
 Sometimes there's data in the report we don't always need to see. With the help of APEX's interactive reports we can select the data columns we want to see. Click in the "Actions" menu next to the search bar and then pick the "Columns" option from the menu. A dialog will appear.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/012.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/012.png">
     <figcaption>Orders Report - Select Columns Step 1</figcaption>
 </figure>
 
 Click on the "<<" button displayed on the dialog, this will hide all the columns in the report. We'll now pics the columns we want by selecting a name in the "Do Not Display" column and clicking on the ">" button. You can reorder the names by clicking the icons located to the right of the "Display in Report" column later on.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/013.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/013.png">
     <figcaption>Orders Report - Select Columns Step 2</figcaption>
 </figure>
 
@@ -142,14 +142,14 @@ Pick at least Order Date, Product Name, and Sales to be in the report. A more si
 Lets use the "Actions" menu once more by picking the "Save Report" option from the sub-menu "Report".
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/014.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/014.png">
     <figcaption>Orders Report - Save Primary Report Step 1</figcaption>
 </figure>
 
 Pick the "As Default Report Settings" option on the "Save" field. A new dialog will appear.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/015.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/015.png">
     <figcaption>Orders Report - Save Primary Report Step 2</figcaption>
 </figure>
 
@@ -160,7 +160,7 @@ Once someone enters the Orders page they will see the report as it is now. Now l
 Click on the "Actions" menu once more and hover over the "Data" option, then pick the "Compute" option in the sub-menu. We will now generate a couple of columns that are said to be "computed", meaning that such columns will have calculated values, normally depending on the original report columns.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/016.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/016.png">
     <figcaption>Orders Report - Compute Uppercase Product Name</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ Enter "Uppercase Product Name" as the "Column Heading" and now type the followin
 Make sure the Q letter corresponds to the "Product Name" column under the "Columns" list, if it doesn't, then replace it with the letter that corresponds to it. You can find all the supported operations for these "Computations" under the "Functions / Operations" list. Click "Apply"
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/017.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/017.png">
     <figcaption>Orders Report - Created Uppercase Product Name Column</figcaption>
 </figure>
 
@@ -182,7 +182,7 @@ Can we have a "Sales by Product" report? Yes. Interactive Reports allow us to gr
 Click on the "Actions" menu and select the "Group By" option. A dialog will open.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/018.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/018.png">
     <figcaption>Orders Report - Group By Uppercase Product Name</figcaption>
 </figure>
 
@@ -191,7 +191,7 @@ Select the "**Uppercase Product Name" column (The two asterisk characters before
 This generates a new report which has only two columns: The "Uppercase Product Name" and the "Total Sales"
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/019.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/019.png">
     <figcaption>Orders Report - Total Sales</figcaption>
 </figure>
 
@@ -200,7 +200,7 @@ Now let's save this report to use it later.
 Hover the "Report" sub-menu from the "Actions" menu and select the "Save Report" option.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/020.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/020.png">
     <figcaption>Orders Report - Save Named Report</figcaption>
 </figure>
 
@@ -211,7 +211,7 @@ Notice that the new report is listed as "Private", this means that only develope
 Select the "Reset" option from the sub-menu "Report" in the "Actions" menu to get it back to normal.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/021.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/021.png">
     <figcaption>Orders Report - Reset</figcaption>
 </figure>
 
@@ -219,7 +219,7 @@ Click "Apply" on the dialog that appears. And it will get back to the saved repo
 Click on the "Actions" menu once more and select the "Compute" option from the "Data" submenu.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/022.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/022.png">
     <figcaption>Orders Report - Compute Order Year</figcaption>
 </figure>
 
@@ -230,14 +230,14 @@ Type "Order Year" as the "Column Heading" and get the following on the "Computat
 Once more, make sure the letter B corresponds to the "Order Date" in the "Columns" list and if not, please change it for the corresponding letter in the "Computation Expression". Click "Apply"
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/023.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/023.png">
     <figcaption>Orders Report - Created Order Year Column</figcaption>
 </figure>
 
 Back to the report, lets create a new "Group By" by selecting such option from the "Actions" menu.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/024.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/024.png">
     <figcaption>Orders Report - Group By Order Year Column</figcaption>
 </figure>
 
@@ -246,12 +246,12 @@ Select "**Order Year" as the "Group By Column", "Sum" as the "Function", "Sales"
 We now have a "Sales by Year" report. Let's save it.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/025.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/025.png">
     <figcaption>Orders Report - Sales by Year Report</figcaption>
 </figure>
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/026.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/026.png">
     <figcaption>Orders Report - Sales by Year Report Save</figcaption>
 </figure>
 
@@ -262,21 +262,21 @@ Click on the "X" button next to the "Edit Group By" element just below the searc
 Select the "Chart" option from the "Actions" menu
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/027.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/027.png">
     <figcaption>Orders Report - Chart</figcaption>
 </figure>
 
 Now pick "**Order Year" as the "Label", "Sales" as "Value", "Sum" as the "Function", "Label - Ascending" as the "Sort", "Year" as the "Axis Title for Label", "Total Sales" as the "Axis Title for Value" and "Vertical" as the "Orientation". Click "Apply"
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/028.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/028.png">
     <figcaption>Orders Report - Sales By Year Chart</figcaption>
 </figure>
 
 You now have a chart of "Sales by Year".
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/029.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/029.png">
     <figcaption>Orders Report - Sales By Year Chart Save</figcaption>
 </figure>
 
@@ -289,7 +289,7 @@ Select a report from the list next to the search bar and then select the "Reset"
 Click on the "Save Report" option from the "Report" sub-menu. Now, instead of saving it "As Named Report" we will save it "As Default Report Settings", this will make the report visible to the application users.
 
 <figure>
-    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/030.png"></a>
+    <img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/030.png">
     <figcaption>Orders Report - Save Alternative Report</figcaption>
 </figure>
 
