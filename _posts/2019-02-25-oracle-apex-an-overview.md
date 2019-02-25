@@ -8,7 +8,7 @@ toc_icon: terminal
 tags:
     - oracle
     - database
-    - apex
+    - oracle-apex
     - overview
 categories:
     - Oracle
