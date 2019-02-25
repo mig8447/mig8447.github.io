@@ -23,7 +23,7 @@ The views expressed here are my own and do not necessarily reflect the views of 
 
 # TL;DR
 
-You can download the finished application from [orders_app.apex.sql](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql). It includes the data in the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
+You can download the finished application from [orders_app.apex.sql]({{ "/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/orders_app.apex.sql" | relative_url }}). It includes the data in the [Orders.csv](/assets/files/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/Orders.csv) file.
 
 # Step by Step Tutorial
 
@@ -203,7 +203,7 @@ Click on the "Save Report" option from the "Report" sub-menu. Now, instead of sa
 
 ![Orders Report - Save Alternative Report](/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/030.png)
 
-Once the above dialog appears, select "Alternative" as the "Default Report Type" and enter the corresponding report name as the "Name", then click "Apply".​􏰀
+Once the above dialog appears, select "Alternative" as the "Default Report Type" and enter the corresponding report name as the "Name", then click "Apply".
 
 Once saved, the report will appear under the "Default" category in the reports list next to the search bar and will be visible by the application users.
 
