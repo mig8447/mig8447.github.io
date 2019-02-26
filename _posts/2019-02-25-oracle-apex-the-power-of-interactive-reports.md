@@ -9,7 +9,7 @@ toc_icon: terminal
 #    feature: 2019-02-25-oracle-apex-the-power-of-interactive-reports.png
 #    teaser: 2019-02-25-oracle-apex-the-power-of-interactive-reports.png
 header:
-    teaser: /assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/003.png
+    teaser: /assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/028.png
 tags:
     - oracle
     - database
