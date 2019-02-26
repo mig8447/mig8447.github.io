@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "Table of Contents"
 toc_icon: terminal
 image:
-    feature: /assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/028.png
+    feature: 2019-02-25-oracle-apex-the-power-of-interactive-reports.png
 tags:
     - oracle
     - database
