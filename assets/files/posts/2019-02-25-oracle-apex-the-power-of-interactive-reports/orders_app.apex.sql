@@ -6,15 +6,15 @@ whenever sqlerror exit sql.sqlcode rollback
 -- ORACLE Application Express (APEX) export file
 --
 -- You should run the script connected to SQL*Plus as the Oracle user
--- APEX_180100 or as the owner (parsing schema) of the application.
+-- APEX_180200 or as the owner (parsing schema) of the application.
 --
 -- NOTE: Calls to apex_application_install override the defaults below.
 --
 --------------------------------------------------------------------------------
 begin
 wwv_flow_api.import_begin (
- p_version_yyyy_mm_dd=>'2018.04.04'
-,p_release=>'18.1.0.00.45'
+ p_version_yyyy_mm_dd=>'2018.05.24'
+,p_release=>'18.2.0.00.12'
 ,p_default_workspace_id=>6006246489442579080
 ,p_default_application_id=>32107
 ,p_default_owner=>'TEC_COURSES'
@@ -27,12 +27,12 @@ prompt APPLICATION 32107 - ORDERS
 -- Application Export:
 --   Application:     32107
 --   Name:            ORDERS
---   Date and Time:   19:57 Thursday July 26, 2018
---   Exported By:     RENATO.GUTIERREZ@ORACLE.COM
+--   Date and Time:   20:12 Tuesday February 26, 2019
+--   Exported By:     MIG8447@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
---   Version:         18.1.0.00.45
---   Instance ID:     63102946836549
+--   Version:         18.2.0.00.12
+--   Instance ID:     63113759365424
 --
 
 -- Application Statistics:
@@ -69,6 +69,7 @@ prompt APPLICATION 32107 - ORDERS
 --     Reports:
 --     E-Mail:
 --   Supporting Objects:  Included
+--     Install scripts:          1
 
 prompt --application/delete_application
 begin
@@ -115,8 +116,8 @@ wwv_flow_api.create_flow(
 ,p_auto_time_zone=>'N'
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'ORDERS'
-,p_last_updated_by=>'RENATO.GUTIERREZ@ORACLE.COM'
-,p_last_upd_yyyymmddhh24miss=>'20180726195545'
+,p_last_updated_by=>'MIG8447@GMAIL.COM'
+,p_last_upd_yyyymmddhh24miss=>'20190226200753'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
@@ -10808,6 +10809,7 @@ wwv_flow_api.create_jet_chart_series(
 ,p_items_label_column_name=>'ORDER_PRIORITY'
 ,p_items_label_rendered=>false
 ,p_items_label_position=>'auto'
+,p_items_label_display_as=>'PERCENT'
 ,p_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.:RP,RIR:IR_ORDER_PRIORITY:&ORDER_PRIORITY.'
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
@@ -10952,6 +10954,7 @@ wwv_flow_api.create_jet_chart_series(
 ,p_items_label_column_name=>'PROVINCE'
 ,p_items_label_rendered=>false
 ,p_items_label_position=>'auto'
+,p_items_label_display_as=>'PERCENT'
 ,p_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.:RP,RIR:IR_PROVINCE:&PROVINCE.'
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
@@ -11043,6 +11046,7 @@ wwv_flow_api.create_jet_chart_series(
 ,p_items_label_column_name=>'REGION'
 ,p_items_label_rendered=>false
 ,p_items_label_position=>'auto'
+,p_items_label_display_as=>'PERCENT'
 ,p_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.:RP,RIR:IR_REGION:&REGION.'
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
@@ -11267,7 +11271,96 @@ end;
 /
 prompt --application/deployment/definition
 begin
-null;
+wwv_flow_api.create_install(
+ p_id=>wwv_flow_api.id(240853437726769849)
+);
+end;
+/
+prompt --application/deployment/install/install_objects_sql
+begin
+wwv_flow_api.create_install_script(
+ p_id=>wwv_flow_api.id(240861667957776363)
+,p_install_id=>wwv_flow_api.id(240853437726769849)
+,p_name=>'objects.sql'
+,p_sequence=>10
+,p_script_type=>'INSTALL'
+,p_script_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'CREATE TABLE "ORDERS" ',
+'   (	"ID" NUMBER, ',
+'	"ORDER_DATE" DATE, ',
+'	"ORDER_PRIORITY" VARCHAR2(30), ',
+'	"ORDER_QUANTITY" NUMBER, ',
+'	"SALES" NUMBER, ',
+'	"DISCOUNT" NUMBER, ',
+'	"SHIP_MODE" VARCHAR2(30), ',
+'	"PROFIT" NUMBER, ',
+'	"UNIT_PRICE" NUMBER, ',
+'	"SHIPPING_COST" NUMBER, ',
+'	"CUSTOMER_NAME" VARCHAR2(30), ',
+'	"PROVINCE" VARCHAR2(30), ',
+'	"REGION" VARCHAR2(30), ',
+'	"CUSTOMER_SEGMENT" VARCHAR2(30), ',
+'	"PRODUCT_CATEGORY" VARCHAR2(30), ',
+'	"PRODUCT_SUB_CATEGORY" VARCHAR2(255), ',
+'	"PRODUCT_NAME" VARCHAR2(255), ',
+'	"PRODUCT_CONTAINER" VARCHAR2(30), ',
+'	"PRODUCT_BASE_MARGIN" VARCHAR2(30), ',
+'	"SHIP_DATE" DATE, ',
+'	 CONSTRAINT "ORDERS_PK" PRIMARY KEY ("ID")',
+'  USING INDEX  ENABLE',
+'   ) ;',
+'',
+' CREATE SEQUENCE  "ORDERS_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 8401 CACHE 20 NOORDER  NOCYCLE ;',
+'',
+'CREATE OR REPLACE TRIGGER "bi_ORDERS" ',
+'  before insert on "ORDERS"              ',
+'  for each row ',
+'begin  ',
+'  if :new."ID" is null then',
+'    select "ORDERS_SEQ".nextval into :new."ID" from sys.dual;',
+'  end if;',
+'end;',
+'',
+'/',
+'',
+'',
+'ALTER TRIGGER "bi_ORDERS" ENABLE;',
+'',
+''))
+);
+wwv_flow_api.create_install_object(
+ p_id=>wwv_flow_api.id(240861700391776366)
+,p_script_id=>wwv_flow_api.id(240861667957776363)
+,p_object_owner=>'#OWNER#'
+,p_object_type=>'SEQUENCE'
+,p_object_name=>'ORDERS_SEQ'
+,p_last_updated_by=>'MIG8447@GMAIL.COM'
+,p_last_updated_on=>to_date('20190226200649','YYYYMMDDHH24MISS')
+,p_created_by=>'MIG8447@GMAIL.COM'
+,p_created_on=>to_date('20190226200649','YYYYMMDDHH24MISS')
+);
+wwv_flow_api.create_install_object(
+ p_id=>wwv_flow_api.id(245940636324782797)
+,p_script_id=>wwv_flow_api.id(240861667957776363)
+,p_object_owner=>'#OWNER#'
+,p_object_type=>'TABLE'
+,p_object_name=>'ORDERS'
+,p_last_updated_by=>'MIG8447@GMAIL.COM'
+,p_last_updated_on=>to_date('20190226200753','YYYYMMDDHH24MISS')
+,p_created_by=>'MIG8447@GMAIL.COM'
+,p_created_on=>to_date('20190226200753','YYYYMMDDHH24MISS')
+);
+wwv_flow_api.create_install_object(
+ p_id=>wwv_flow_api.id(245940830392782798)
+,p_script_id=>wwv_flow_api.id(240861667957776363)
+,p_object_owner=>'#OWNER#'
+,p_object_type=>'TRIGGER'
+,p_object_name=>'bi_ORDERS'
+,p_last_updated_by=>'MIG8447@GMAIL.COM'
+,p_last_updated_on=>to_date('20190226200753','YYYYMMDDHH24MISS')
+,p_created_by=>'MIG8447@GMAIL.COM'
+,p_created_on=>to_date('20190226200753','YYYYMMDDHH24MISS')
+);
 end;
 /
 prompt --application/deployment/checks
