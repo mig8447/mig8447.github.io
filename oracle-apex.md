@@ -7,5 +7,6 @@ taxonomy: oracle-apex
 permalink: /oracle-apex/
 ---
 
+![Oracle APEX Logo](/assets/images/oracle-apex-logo.svg){: .align-left}
 <!-- TODO: Explain why I like APEX and a little bit of my history with it -->
 Posts about Oracle Application Express.
