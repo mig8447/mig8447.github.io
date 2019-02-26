@@ -2,6 +2,7 @@
 title: "Oracle Application Express (APEX)"
 date: 2019-02-25 06:43:53 +0600
 layout: tag
+entries_layout: grid
 author_profile: true
 taxonomy: oracle-apex
 permalink: /oracle-apex/
