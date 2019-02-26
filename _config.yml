@@ -44,8 +44,10 @@ defaults:
 
 # Build settings
 markdown: kramdown
-# Disable smart quotes
 kramdown:
+    # Enable tables of content to go through h4
+    toc_levels: 1..4
+    # Disable smart quotes
     smart_quotes: apos,apos,quot,quot
 #remote_theme: "fongandrew/hydeout"
 remote_theme: "mig8447/minimal-mistakes"
