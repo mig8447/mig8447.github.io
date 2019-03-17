@@ -17,14 +17,14 @@ categories:
 This is a short post describing how to get the screen auto-resizing working in a CentOS 7 VirtualBox guest OS
 <!-- more -->
 
-# TL;DR
+## TL;DR
 
 1. Upgrade VirtualBox to at least 5.2.26
 2. Re-install VirtualBox Guest Additions in the guest OS to match the new version
 3. Reboot the guest OS
 4. Enjoy
 
-# The situation
+## The situation
 
 Across the years I've installed CentOS in its different versions into VirtualBox to test new software as it allows you to have a sandbox to play with and to return to a snapshot you took (Remember to take snapshots before playing around with your machine) in case your system ends up cluttered or even broken (Been there, done that).
 
