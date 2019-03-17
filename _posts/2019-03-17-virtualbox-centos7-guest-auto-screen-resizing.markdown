@@ -30,4 +30,4 @@ Across the years I've installed CentOS in its different versions into VirtualBox
 
 All of the VMs that I've used with CentOS have worked just fine except for one thing, auto-screen resizing does not work. Recently I came across an update of VirtualBox whose additions seem to have fixed the issue, there were some blogposts I read about modifying the `/etc/modprobe.d/vboxvideo.conf` file and overwriting it with `“options vboxvideo modeset=1"`, a thing which I didn't try because I didn't have the time to experiment back then, but today, just with a simple update of the Guest Additions it all started to work like a charm. Steps to install are written in the [TL;DR](#TLDR) section above.
 
-It is worth noticing that I updated the kernel of the machine a few days ago to `kernel-3.10.0-957.5.1.el7.x86_64.rpm` but it didn't help until I upgraded VirtualBox.
+It is worth noticing that my host OS is macOS 10.13.6 and that I updated the kernel of the machine a few days ago to `kernel-3.10.0-957.5.1.el7.x86_64.rpm` but it didn't help until I upgraded VirtualBox.
