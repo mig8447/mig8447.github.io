@@ -47,14 +47,14 @@ The following steps will provide guidance on how to build an APEX Application fr
 
 ### Creating an Application from a Spreadsheet
 
-Once you have an APEX workspace set up and have accessed it. A screen like the following should appear:
+Once you have an APEX workspace set up and have accessed it. A screen like the one shown below should appear. Click on the Create button.
 
 <figure>
     <a href="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/001.png"><img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/001.png"></a>
     <figcaption>Application Builder Main Page</figcaption>
 </figure>
 
-Click on the Create button. This will take you to the "Create an Application" page, where you can choose from a range of options to start creating your application. Click on "From a File".
+This will take you to the "Create an Application" page, where you can choose from a range of options to start creating your application. Click on "From a File".
 
 <figure>
     <a href="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/002.png"><img src="/assets/images/posts/2019-02-25-oracle-apex-the-power-of-interactive-reports/002.png"></a>
