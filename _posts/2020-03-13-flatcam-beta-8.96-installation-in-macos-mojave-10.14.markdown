@@ -56,6 +56,10 @@ deactivate
 cat <<'EOF' > FlatCAM
 #!/bin/bash
 
+# Make sure the Homebrew executable paths are in the PATH env variable
+export PATH='/usr/local/bin:/usr/local/sbin:'"$PATH"
+
+# Find the script's real path
 script_directory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if real_script_path="$( readlink "$script_directory/$( basename "$0" )" )"
 then
@@ -67,10 +71,15 @@ fi
 
 exit_code=0
 
+# Enable FlatCAM's virtual env
 source "$script_directory"'/env/bin/activate'
+# Execute FlatCAM, log the output to FlatCAM.log
 python3 "$script_directory"'/FlatCAM.py' &> "$script_directory"'/FlatCAM.log'
+# Capture the exit code
 exit_code="$?"
+# Disable the virtual env
 deactivate
+# Exit the script with the exit code returned by FlatCAM
 exit "$exit_code"
 
 EOF
@@ -88,6 +97,17 @@ mv FlatCAM_beta_8.96_sources /Applications/FlatCAM_beta_8.96
 # Open the application from the terminal (This is not needed, you can open it double clicking the file in the Applications folder)
 open /Applications/FlatCAM_beta_8.96/FlatCAM.app
 ```
+
+Once you're done, a window like the following will appear:
+
+<figure>
+    <a href="/assets/images/posts/2020-03-13-flatcam-beta-8.96-installation-in-macos-mojave-10.14/001.jpg"><img src="/assets/images/posts/2020-03-13-flatcam-beta-8.96-installation-in-macos-mojave-10.14/001.jpg"></a>
+    <figcaption>FlatCAM 8.86 Running in macOS Mojave</figcaption>
+</figure>
+
+## Caveats
+
+I'm not sure why, but sometimes, when quitting the program, something fails and errors are returned. I'll have to live with it but if someone can help debug the issue that would be great
 
 ## Resources
 
