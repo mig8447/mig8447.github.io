@@ -51,7 +51,7 @@ kramdown:
     smart_quotes: apos,apos,quot,quot
 #remote_theme: "fongandrew/hydeout"
 remote_theme: "mig8447/minimal-mistakes"
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "dark"
 plugins:
     - jekyll-feed
     - jekyll-gist
