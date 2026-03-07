@@ -7,3 +7,16 @@
 <meta name="msapplication-TileColor" content="#b91d47">
 <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+
+{% if page.mermaid or site.mermaid %}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" integrity="sha384-DqvVpl/sEwdWJQZydk42he48XKa0T8uDsbX1xWckhpKHoKCFp7gJmuCbs7st3I52" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const prefersDark = document.documentElement.dataset.theme === "dark";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: prefersDark ? "dark" : "neutral",
+      });
+    });
+  </script>
+{% endif %}
