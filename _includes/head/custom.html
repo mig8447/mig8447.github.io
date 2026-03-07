@@ -12,6 +12,14 @@
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" integrity="sha384-enVdc7lTHDGtpROV85t9+VqPC2EyyB0hsRD0MrvQnHUsHmTHIz2D8SPP4EnBkstH" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      const codeBlocks = document.querySelectorAll("pre code.language-mermaid");
+      codeBlocks.forEach((code) => {
+        const container = document.createElement("div");
+        container.classList.add("mermaid");
+        container.textContent = code.textContent;
+        code.parentElement.replaceWith(container);
+      });
+
       const prefersDark = document.documentElement.dataset.theme === "dark";
       mermaid.initialize({
         startOnLoad: true,

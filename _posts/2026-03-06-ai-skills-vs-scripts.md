@@ -11,7 +11,7 @@ If you have doubts on when to use AI skills and when you should rather prefer
 using a script this article will clear your doubts
 <!--more-->
 
-## TLDR
+## TLDR;
 
 Use this quick flow to decide whether a skill, a script, or a hybrid makes
 the most sense for your automation.
