@@ -7,28 +7,31 @@ categories: [ai]
 mermaid: true
 description: "Quick guide to choose between LLM skills, deterministic scripts, or a hybrid approach."
 ---
+If you have doubts on when to use AI skills and when you should rather prefer
+using a script this article will clear your doubts
+<!--more-->
 
-## TLDR;
+## TLDR
 
 Use this quick flow to decide whether a skill, a script, or a hybrid makes
 the most sense for your automation.
 
-<!-- markdownlint-disable MD013 -->
-```mermaid
+<!-- markdownlint-disable MD013 MD033 -->
+<div class="mermaid">
 flowchart TD
     Start[Does the process need interpretation?]
-    Start -- No --> Scripts["Use scripts<br/>(100% deterministic)"]
-    Start -- Yes --> Loop{"Do you need a feedback loop<br/>with multiple iterations?"}
-    Loop -- Yes --> Skill["Full skill<br/>(LLM in the loop)"]
-    Loop -- No --> Hybrid{"Only one<br/>interpretation step?"}
-    Hybrid -- Yes --> HybridPath["Hybrid path<br/>(script + LLM step)"]
+    Start -- No --> Scripts["Use scripts\\n(100% deterministic)"]
+    Start -- Yes --> Loop{"Do you need a feedback loop\\nwith multiple iterations?"}
+    Loop -- Yes --> Skill["Full skill\\n(LLM in the loop)"]
+    Loop -- No --> Hybrid{"Only one\\ninterpretation step?"}
+    Hybrid -- Yes --> HybridPath["Hybrid path\\n(script + LLM step)"]
     Hybrid -- No --> Skill
 
-    Scripts --> Notes1["- Data transformations<br/>- Reproducible automations<br/>- No LLM dependency at runtime"]
-    Skill --> Notes2["- Agentic scraping<br/>- Screenshot/log analysis<br/>- Styled report/code generation"]
-    HybridPath --> Notes3["- Script kicks things off<br/>- LLM interprets a critical point<br/>- Still a script, not a skill"]
-```
-<!-- markdownlint-enable MD013 -->
+    Scripts --> Notes1["Data transformations\\nReproducible automations\\nNo LLM dependency at runtime"]
+    Skill --> Notes2["Agentic scraping\\nScreenshot/log analysis\\nStyled report/code generation"]
+    HybridPath --> Notes3["Script kicks things off\\nLLM interprets a critical point\\nStill a script, not a skill"]
+</div>
+<!-- markdownlint-enable MD013 MD033 -->
 
 ## When to use a skill
 
