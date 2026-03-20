@@ -2,16 +2,20 @@
 layout: single
 title: "AI skills vs. scripts: when to use each"
 date: 2026-03-06
+listen_to_this_post: true
 tags: [ai, automation, skills, scripts]
 categories: [ai]
 mermaid: true
+header:
+    overlay_image: /assets/images/hero-overlay.jpg
+    teaser: /assets/images/hero-overlay.jpg
 description: "Quick guide to choose between LLM skills, deterministic scripts, or a hybrid approach."
 ---
 If you have doubts on when to use AI skills and when you should rather prefer
 using a script this article will clear your doubts
 <!--more-->
 
-## TLDR;
+## TLDR
 
 Use this quick flow to decide whether a skill, a script, or a hybrid makes
 the most sense for your automation.

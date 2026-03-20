@@ -5,6 +5,9 @@ date: 2026-03-20
 tags: [ai, automation, cli, mcp]
 categories: [ai]
 mermaid: true
+header:
+    overlay_image: /assets/images/hero-overlay.jpg
+    teaser: /assets/images/hero-overlay.jpg
 description: "A 3-minute guide to choose between CLIs, MCPs, or a CLI plus skill for AI agents, with Playwright and mcp2cli examples."
 ---
 If you use AI agents for coding you will likely end up choosing between a CLI
