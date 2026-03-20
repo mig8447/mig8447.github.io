@@ -3,6 +3,7 @@ layout: single
 title: "When to use prompts and when to use skills"
 tags: [ai, prompts, skills, automation]
 categories: [ai]
+mermaid: true
 description: "A practical guide for choosing between prompts and skills, and how the two can work together."
 ---
 If you are building with AI, the question is often not "prompt or skill?"
