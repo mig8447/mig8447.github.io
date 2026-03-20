@@ -5,6 +5,7 @@ tags: [ai, prompts, skills, automation]
 categories: [ai]
 mermaid: true
 header:
+    overlay_image: /assets/images/posts/2026-03-20-when-to-use-prompts-and-when-to-use-skills/teaser.jpg
     teaser: /assets/images/posts/2026-03-20-when-to-use-prompts-and-when-to-use-skills/teaser.jpg
 description: "A practical guide for choosing between prompts and skills, and how the two can work together."
 ---
