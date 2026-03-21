@@ -8,7 +8,8 @@ categories: [ai]
 mermaid: true
 header:
     overlay_image: /assets/images/hero-overlay.jpg
-    teaser: /assets/images/hero-overlay.jpg
+    teaser: /assets/images/posts/2026-03-06-ai-skills-vs-scripts/teaser.jpg
+    og_image: /assets/images/posts/2026-03-06-ai-skills-vs-scripts/teaser.jpg
 description: "Quick guide to choose between LLM skills, deterministic scripts, or a hybrid approach."
 ---
 If you have doubts on when to use AI skills and when you should rather prefer
