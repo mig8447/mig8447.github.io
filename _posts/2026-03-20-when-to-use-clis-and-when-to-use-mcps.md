@@ -9,7 +9,7 @@ header:
     overlay_image: /assets/images/hero-overlay.jpg
     teaser: /assets/images/posts/2026-03-20-when-to-use-clis-and-when-to-use-mcps/teaser.jpg
     og_image: /assets/images/posts/2026-03-20-when-to-use-clis-and-when-to-use-mcps/teaser.jpg
-description: "A 3-minute guide to choose between CLIs, MCPs, or a CLI plus skill for AI agents, with Playwright and mcp2cli examples."
+description: "MCP vs CLI. which one do I use? 🤔. A 3-minute guide to choose between CLIs, MCPs, or a CLI plus skill for AI agents, with Playwright and mcp2cli examples."
 ---
 If you use AI agents for coding you will likely end up choosing between a CLI
 and an MCP for the same capability. This guide is the short version of how I

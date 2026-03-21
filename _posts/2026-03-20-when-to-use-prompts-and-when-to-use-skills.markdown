@@ -8,7 +8,7 @@ header:
     overlay_image: /assets/images/hero-overlay.jpg
     teaser: /assets/images/posts/2026-03-20-when-to-use-prompts-and-when-to-use-skills/teaser.jpg
     og_image: /assets/images/posts/2026-03-20-when-to-use-prompts-and-when-to-use-skills/teaser.jpg
-description: "A practical guide for choosing between prompts and skills, and how the two can work together."
+description: "Prompts vs Skills. When should I use each? 🤔. A practical guide for choosing between prompts and skills, and how the two can work together."
 ---
 If you are building with AI, the question is often not "prompt or skill?"
 but "what do I need the output to do next?" That is usually the real

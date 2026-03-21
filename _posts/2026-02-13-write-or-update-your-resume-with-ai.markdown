@@ -19,6 +19,7 @@ header:
     overlay_image: /assets/images/posts/2026-02-13-write-or-update-your-resume-with-ai/teaser.jpg
     teaser: /assets/images/posts/2026-02-13-write-or-update-your-resume-with-ai/teaser.jpg
     og_image: /assets/images/posts/2026-02-13-write-or-update-your-resume-with-ai/teaser.jpg
+description: "Reverse Prompt Your Resume. Get help from AI to create or update it 🤖. This post is about using AI to create or update your resume in a practical way."
 ---
 This post is about using AI to create or update your resume in a practical way.
 If you have been postponing this task (like I did), this workflow helps.
