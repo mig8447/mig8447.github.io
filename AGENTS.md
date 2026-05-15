@@ -5,6 +5,41 @@
 Use this repository pattern for the recent AI posts and keep new drafts close
 to it.
 
+### Blog Intake
+
+- Before drafting a new blog post, ask for the title angle, target audience,
+  and whether the tone should be blunt, polished, or marketing-heavy.
+- If the title is still open, propose a few catchy options first and wait for
+  selection before writing the draft.
+- When source material is provided, confirm the main claim and the intended
+  takeaway before writing prose.
+- If the request is underspecified, ask concise follow-up questions instead of
+  guessing the post direction.
+- Write for the audience directly. Do not refer to the source material as a
+  transcript in the published post unless the transcript itself is the topic.
+- Turn source metaphors into audience-facing takeaways. Use the metaphor to
+  clarify the point, not to describe the source material.
+- When the user provides a supporting image, use it with clear attribution only
+  if it strengthens the post's argument.
+- Avoid repeating the same lead-in phrase in a post. Keep openings and section
+  intros varied so the writing does not feel repetitive.
+- Use a phrase like `My honest take` at most once per post. Do not reuse the
+  same personal lead-in across multiple sections.
+
+### Blog Workflow
+
+- Start from the resources and source content the user provides.
+- Generate blog posts one by one. Do not start the next post until the current
+  one has been drafted, reviewed, and its teaser assets are ready.
+- Iterate first on the blog post titles until the direction is locked.
+- Iterate next on the post content, using the repository guidance to shape the
+  draft and revise it until the user is happy.
+- Only generate or refine teaser and image assets after the post content has
+  been reviewed and is ready for publishing.
+- Treat teaser generation as a late-stage step, not part of the first content
+  draft.
+- Publish only after the title, content, and teaser assets are all settled.
+
 ### Front Matter
 
 - Use `layout: single`.
