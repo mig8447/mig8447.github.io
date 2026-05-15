@@ -283,8 +283,7 @@ clear.
 - [Ralph Loop](https://ralphloop.sh/)
 - [Claude goal workflow](https://code.claude.com/docs/en/goal)
 -
-
-[Follow goals with Codex](https://developers.openai.com/codex/use-cases/follow-goals)
+    [Follow goals with Codex](https://developers.openai.com/codex/use-cases/follow-goals)
 
 ### Guidance
 
