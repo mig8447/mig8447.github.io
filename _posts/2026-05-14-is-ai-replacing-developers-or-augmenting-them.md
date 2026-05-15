@@ -98,9 +98,8 @@ about the tool as a developer.
 If you treat AI like a threat, you get fear and resistance. If you treat it like
 something you have to learn to control, you get leverage.
 
-The real question is not whether a manager should adopt the tool. It is whether
-you, as the developer, are using it well enough to stay effective and in
-control.
+The real question is whether you are using it well enough to stay effective and
+in control.
 
 That is the more honest line.
 
