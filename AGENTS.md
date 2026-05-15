@@ -19,6 +19,9 @@ to it.
   transcript in the published post unless the transcript itself is the topic.
 - Turn source metaphors into audience-facing takeaways. Use the metaphor to
   clarify the point, not to describe the source material.
+- Avoid manager-style adoption framing unless the post is explicitly about
+  management. Write to the developer reading the post, not to the person trying
+  to sell the tool.
 - When the user provides a supporting image, use it with clear attribution only
   if it strengthens the post's argument.
 - Avoid repeating the same lead-in phrase in a post. Keep openings and section
