@@ -25,18 +25,18 @@ the most sense for your automation.
 ```mermaid
 flowchart TD
     Start[Does the process need interpretation?]
-    Start -- No --> Scripts["Use scripts\n(100% deterministic)"]
-    Start -- Yes --> Loop{"Do you need a feedback loop\nwith multiple iterations?"}
-    Loop -- Yes --> Skill["Full skill\n(LLM in the loop)"]
-    Loop -- No --> Hybrid{"Only one\ninterpretation step?"}
-    Hybrid -- Yes --> HybridPath["Hybrid path\n(script + LLM step)"]
-    Hybrid -- No --> Skill
-
-    Scripts --> Notes1["Data transformations\nReproducible automations\nNo LLM dependency at runtime"]
-    Skill --> Notes2["Agentic scraping\nScreenshot/log analysis\nStyled report/code generation"]
-    HybridPath --> Notes3["Script kicks things off\nLLM interprets a critical point\nStill a script, not a skill"]
+    Start -- No --> Scripts[Use scripts]
+    Start -- Yes --> Loop{Multiple feedback loops?}
+    Loop -- Yes --> Skill[Use a skill]
+    Loop -- No --> Hybrid[Use a hybrid approach]
 ```
 <!-- markdownlint-enable MD013 -->
+
+- Use scripts for deterministic work like data transforms and reproducible
+    automations.
+- Use a skill when the LLM needs to interpret unstructured input in a loop.
+- Use a hybrid when one interpretive step sits inside an otherwise
+    deterministic process.
 
 ## When to use a skill
 
