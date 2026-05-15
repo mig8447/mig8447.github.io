@@ -72,11 +72,6 @@ to it.
   OpenGraph images.
 - If the title is not locked, propose a few catchy options first and wait for
   selection before generating artwork.
-- Do not modify the upstream `imagegen` skill. Keep its `output/` convention
-  intact and treat it as external guidance.
-- Use `.cache/` for local harnesses and temporary scratch files that should not
-  be exposed by Jekyll.
-- Keep final publishable images in `assets/images/posts/...`.
 - Use the `generate-blog-teaser` skill for AI post teaser, hero, and OpenGraph
   images.
 - Use `prompt-ai-comparison-teaser.md` for AI-vs-AI or tool-vs-tool posts.
