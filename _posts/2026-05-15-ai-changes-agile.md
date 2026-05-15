@@ -55,7 +55,12 @@ flowchart TD
 
     W --> S
     A --> S
-    S --> O --> G --> I --> V --> R --> O
+    S --> O
+    O --> G
+    G --> I
+    I --> V
+    V --> R
+    R -.-> O
 ```
 <!-- markdownlint-enable MD013 -->
 
