@@ -14,6 +14,7 @@ tags:
   - project-management
 categories:
   - ai
+mermaid: true
 header:
   overlay_image: /assets/images/posts/2026-05-15-ai-changes-agile/teaser.jpg
   teaser: /assets/images/posts/2026-05-15-ai-changes-agile/teaser.jpg
