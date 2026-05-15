@@ -92,17 +92,17 @@ Those are not the same thing, and pretending they are is how teams get burned.
 
 ## Why the replacement framing backfires
 
-The replacement framing sounds dramatic, but it is the wrong message if you want
-people to adopt the tool seriously.
+The replacement framing sounds dramatic, but it is still the wrong way to think
+about the tool as a developer.
 
-If you tell developers that AI is here to replace them, you get fear and
-resistance. If you tell them it is here to make them more effective, you get a
-better shot at actual adoption.
+If you treat AI like a threat, you get fear and resistance. If you treat it like
+something you have to learn to control, you get leverage.
 
-The better line is the practical one: the goal is to give developers tools so
-they are harder to replace, not easier to discard.
+The real question is not whether a manager should adopt the tool. It is whether
+you, as the developer, are using it well enough to stay effective and in
+control.
 
-That message is also more honest.
+That is the more honest line.
 
 AI can help a developer do more. It does not remove the need for:
 
@@ -112,7 +112,7 @@ AI can help a developer do more. It does not remove the need for:
 - context management,
 - or accountability.
 
-The person is still responsible for the code, even if the machine drafted it.
+You are still responsible for the code, even if the machine drafted it.
 
 ## What changes for teams
 
