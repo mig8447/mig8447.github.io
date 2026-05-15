@@ -1,0 +1,7 @@
+interface:
+  display_name: "Generate Blog Teasers"
+  short_description: "Create editorial teaser images for blog posts"
+  default_prompt: "Use $generate-blog-teaser to create a 1200x627 teaser image for this blog post. Choose the comparison prompt for AI-vs-AI or tool-vs-tool posts, and choose the topic prompt for single-subject posts."
+
+policy:
+  allow_implicit_invocation: true
