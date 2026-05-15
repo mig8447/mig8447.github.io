@@ -4,3 +4,4 @@ _site
 .DS_Store
 .playwright-cli/
 output/
+.cache/
