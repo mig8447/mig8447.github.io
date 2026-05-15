@@ -112,6 +112,8 @@ to it.
   selection before generating artwork.
 - Use the `generate-blog-teaser` skill for AI post teaser, hero, and OpenGraph
   images.
+- After image generation, inspect the candidate render before copying it into
+  the repo. Do not assume the latest file is the right one.
 - Use `prompt-ai-comparison-teaser.md` for AI-vs-AI or tool-vs-tool posts.
 - Use `prompt-ai-topic-teaser.md` for single-subject AI posts such as resumes,
   how-to guides, or other topic-only articles.
