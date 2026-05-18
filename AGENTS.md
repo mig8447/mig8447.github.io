@@ -15,6 +15,17 @@ to it.
   takeaway before writing prose.
 - If the request is underspecified, ask concise follow-up questions instead of
   guessing the post direction.
+- Before drafting, identify the most discerning audience that would actually
+  care about the post and write for that reader first.
+- Reduce the idea to one argument before writing the draft. If the claim cannot
+  be stated cleanly, the post is not ready.
+- Ask what the reader should think, decide, or do after finishing the post.
+  That answer should shape the opening and the conclusion.
+- Use titles that create curiosity and make the right reader want to open the
+  post, but only if the article fully justifies the promise.
+- Do not use clickbait, hype, or marketing language in the body of the post.
+- Make sure the article narrative is cohesive. Each section should build on the
+  one before it instead of reading like disconnected notes.
 - Write for the audience directly. Do not refer to the source material as a
   transcript in the published post unless the transcript itself is the topic.
 - Turn source metaphors into audience-facing takeaways. Use the metaphor to
@@ -86,6 +97,24 @@ to it.
 - State when two approaches can work together.
 - Note when a technique is a poor fit, not just when it is a good fit.
 - Prefer concise prose and short lists over long paragraphs.
+- Open with a concrete tension, tradeoff, or decision instead of a generic
+  summary.
+- Prefer specific examples and operational details over abstract statements.
+- Cut repetition aggressively. If a sentence only restates the thesis, remove
+  it.
+- Make each section earn its place by advancing the argument or giving the
+  reader a practical takeaway.
+- Keep the narrative moving. The opening should set up the problem, the middle
+  should explain the tradeoffs, and the ending should land the rule of thumb.
+
+### Purpose
+
+- Treat each post as both a public essay and a durable note for future reuse.
+- Optimize for readers who already understand the domain and want sharper
+  judgment, not broad beginner-friendly filler.
+- Publish to clarify your own thinking, but do not leave the draft in that
+  private state. Shape it so a strong reader can challenge it, trust it, or use
+  it.
 
 ### Pre-publish Review
 
