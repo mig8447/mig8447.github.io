@@ -7,8 +7,8 @@ categories: [ai]
 mermaid: true
 description: "MCP vs REST vs CLI. The real abstraction is still the code underneath. MCP is useful, but CLI and REST remain the surfaces I trust more for most integrations."
 ---
-If one surface ships in isolation, the app gets less cohesive. That is the real
-problem underneath every new way software tries to talk to software.
+The real problem is choosing a surface that fragments the app instead of
+making it easier to use.
 <!--more-->
 
 ## TLDR
@@ -42,21 +42,9 @@ flowchart TD
 This is not a new category of problem. It is the same integration problem with
 new packaging.
 
-In the 1980s, software integrated through serial links and other
-device-level protocols. In the 1990s, teams moved data around with text files
-and XML (Extensible Markup Language). XML became a W3C (World Wide Web
-Consortium) Recommendation in 1998. SOAP (Simple Object Access Protocol) was
-published as a W3C Note in 2000, and Roy Fielding’s 2000 dissertation
-formalized REST (Representational State Transfer) as the style that still
-shapes most web APIs.
-
-The pattern is simple:
-
-- 1998: XML standardizes structured interchange.
-- 2000: SOAP formalizes XML message exchange.
-- 2000: REST gives the web a cleaner application contract.
-- 2020s: MCP (Model Context Protocol) gives agents a protocol-shaped tool
-    surface.
+- XML standardized structured interchange in the late 1990s.
+- SOAP and REST gave web apps two different ways to expose the same code.
+- MCP (Model Context Protocol) gives agents a protocol-shaped tool surface.
 
 The surfaces change. The underlying functions do not.
 
@@ -188,6 +176,11 @@ I would use it when:
     understandable interface,
 - and the maintenance cost is justified by the reuse.
 
+Think of an internal app with dozens of useful actions but a clumsy REST API
+that exposes too much noise and too little task-oriented structure. MCP can be a
+better agent surface there because it compresses the API into something a model
+can reason about without carrying the whole web contract in its head.
+
 That last condition matters.
 
 If the MCP server is just a thin wrapper around an app that already has a good
@@ -202,6 +195,8 @@ My default rule is blunt:
 - Prefer REST for application-to-application integration.
 - Use MCP when the agent-native protocol surface is worth the extra operational
     cost.
+- Prefer the surface that keeps the app coherent instead of splitting the same
+    capability across multiple wrappers.
 
 And if the CLI help is actually good, make it even better for agents with a
 skill or repo guidance instead of bolting on another server.
