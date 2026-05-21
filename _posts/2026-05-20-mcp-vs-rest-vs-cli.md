@@ -7,9 +7,8 @@ categories: [ai]
 mermaid: true
 description: "MCP vs REST vs CLI. The real abstraction is still the code underneath. MCP is useful, but CLI and REST remain the surfaces I trust more for most integrations."
 ---
-Software keeps inventing new ways to talk to other software, but the real issue
-is still the implementation underneath: if one surface ships in isolation, the
-app gets less cohesive.
+If one surface ships in isolation, the app gets less cohesive. That is the real
+problem underneath every new way software tries to talk to software.
 <!--more-->
 
 ## TLDR
@@ -161,12 +160,10 @@ surfaces that were never designed for agents in the first place.
 
 REST is still the default inter-app contract for a reason.
 
-It is stable, widely understood, and easy to share across teams and tools. A
-CLI can wrap it, an MCP can wrap it, and the app can still keep one contract for
-other systems to depend on. That matters when you care about the whole app
-staying coherent instead of only one protocol-shaped slice of it.
+A CLI can wrap it, an MCP can wrap it, and the app can still keep one contract
+for other systems to depend on.
 
-That is the architecture I trust more:
+That is the stack I trust more:
 
 - the code lives in the app,
 - REST exposes the app to other apps,
@@ -210,7 +207,8 @@ And if the CLI help is actually good, make it even better for agents with a
 skill or repo guidance instead of bolting on another server.
 
 That avoids stale sessions, avoids duplicate surfaces, and keeps the real logic
-where it belongs: in the codebase, not in the wrapper.
+where it belongs: in the codebase, not in the wrapper. If that makes the MCP
+camp uncomfortable, good. They should have to defend the extra layer.
 
 ## Resources
 
