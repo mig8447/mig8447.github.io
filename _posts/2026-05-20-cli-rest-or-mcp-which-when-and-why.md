@@ -58,10 +58,10 @@ In practice, a lot of MCP usage turns into this:
 - something external changes,
 - and now you are restarting the agent because the tool surface got stale.
 
-That is a fragile way to build a developer workflow. If the MCP depends on
+That is a fragile way to build a developer workflow. MCP assumes the session
+state will stay valid longer than it often does. If the server depends on
 internal network access, a temporary auth state, or any other condition that
-can change during the session, it is already one failure away from becoming
-annoying.
+can change during the session, the tool stops being trustworthy.
 
 MCP still has work to do around server initialization and lifecycle
 management. The fragile part is not the protocol itself; it is the stale
