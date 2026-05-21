@@ -5,6 +5,9 @@ date: 2026-05-20
 tags: [ai, architecture, cli, mcp, rest]
 categories: [ai]
 mermaid: true
+header:
+    teaser: /assets/images/posts/2026-05-20-cli-rest-or-mcp-which-when-and-why/teaser.jpg
+    og_image: /assets/images/posts/2026-05-20-cli-rest-or-mcp-which-when-and-why/teaser.jpg
 description: "CLI, REST, or MCP. Which, when, and why. MCP is useful, but CLI and REST remain the surfaces I trust more for most integrations."
 ---
 The real problem is choosing a surface that fragments the app instead of
