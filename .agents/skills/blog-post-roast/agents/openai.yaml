@@ -1,0 +1,11 @@
+interface:
+  display_name: "Blog Post Roast"
+  short_description: "Run blunt post critiques across 3 CLIs"
+  default_prompt: >
+    Use $blog-post-roast to review a draft blog post via scripts/roast.mjs,
+    which runs Claude CLI, Gemini CLI, and Codex exec in parallel inside an
+    isolated temp review workspace with read-only limits, small models, and
+    medium reasoning, then merge the critiques into one report.
+
+policy:
+  allow_implicit_invocation: true
