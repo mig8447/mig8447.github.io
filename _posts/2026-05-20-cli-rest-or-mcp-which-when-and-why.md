@@ -5,7 +5,12 @@ date: 2026-05-20
 tags: [ai, architecture, cli, mcp, rest]
 categories: [ai]
 mermaid: true
+toc: true
+toc_sticky: true
+toc_label: "On this page"
+toc_icon: terminal
 header:
+    overlay_image: /assets/images/posts/2026-05-20-cli-rest-or-mcp-which-when-and-why/teaser.jpg
     teaser: /assets/images/posts/2026-05-20-cli-rest-or-mcp-which-when-and-why/teaser.jpg
     og_image: /assets/images/posts/2026-05-20-cli-rest-or-mcp-which-when-and-why/teaser.jpg
 description: "CLI, REST, or MCP. Which, when, and why. MCP is useful, but CLI and REST remain the surfaces I trust more for most integrations."
@@ -13,16 +18,6 @@ description: "CLI, REST, or MCP. Which, when, and why. MCP is useful, but CLI an
 The real problem is choosing a surface that fragments the app instead of
 making it easier to use.
 <!--more-->
-
-## On This Page
-
-- [TLDR](#tldr)
-- [What MCP actually adds](#what-mcp-actually-adds)
-- [Why CLIs keep winning](#why-clis-keep-winning)
-- [REST still matters](#rest-still-matters)
-- [When MCP is worth it](#when-mcp-is-worth-it)
-- [My default rule](#my-default-rule)
-- [Resources](#resources)
 
 ## TLDR
 
