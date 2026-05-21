@@ -112,6 +112,8 @@ to it.
 - Treat each post as both a public essay and a durable note for future reuse.
 - Optimize for readers who already understand the domain and want sharper
   judgment, not broad beginner-friendly filler.
+- Write to move experienced readers into thinking, not to recite basics they
+  already know unless those basics are needed to support a sharper claim.
 - Publish to clarify your own thinking, but do not leave the draft in that
   private state. Shape it so a strong reader can challenge it, trust it, or use
   it.

@@ -7,9 +7,9 @@ categories: [ai]
 mermaid: true
 description: "MCP vs REST vs CLI. The real abstraction is still the code underneath. MCP is useful, but CLI and REST remain the surfaces I trust more for most integrations."
 ---
-Software keeps inventing new ways to talk to other software, but the core idea
-has not changed: one codebase exposes the same functions through different
-surfaces. The hard part is still the implementation underneath.
+Software keeps inventing new ways to talk to other software, but the real issue
+is still the implementation underneath: if one surface ships in isolation, the
+app gets less cohesive.
 <!--more-->
 
 ## TLDR
@@ -40,25 +40,26 @@ flowchart TD
 
 ## The pattern is old
 
-This is not a new category of problem.
+This is not a new category of problem. It is the same integration problem with
+new packaging.
 
-In the 1980s, software often integrated through serial links and other
+In the 1980s, software integrated through serial links and other
 device-level protocols. In the 1990s, teams moved data around with text files
-and then with XML (Extensible Markup Language). XML became a W3C (World Wide Web
-Consortium) Recommendation in 1998. SOAP (Simple Object Access Protocol) showed
-up as a W3C Note in 2000, and Roy Fielding’s 2000 dissertation formalized REST
-(Representational State Transfer) as the style that still shapes most web APIs.
+and XML (Extensible Markup Language). XML became a W3C (World Wide Web
+Consortium) Recommendation in 1998. SOAP (Simple Object Access Protocol) was
+published as a W3C Note in 2000, and Roy Fielding’s 2000 dissertation
+formalized REST (Representational State Transfer) as the style that still
+shapes most web APIs.
 
-So the timeline is not mysterious:
+The pattern is simple:
 
-- 1998: XML is standardized.
-- 2000: SOAP is published.
-- 2000: REST is named and defined.
-- 2020s: MCP (Model Context Protocol) shows up for AI tool use.
+- 1998: XML standardizes structured interchange.
+- 2000: SOAP formalizes XML message exchange.
+- 2000: REST gives the web a cleaner application contract.
+- 2020s: MCP (Model Context Protocol) gives agents a protocol-shaped tool
+    surface.
 
 The surfaces change. The underlying functions do not.
-
-That is the part people keep pretending is magical. It is not.
 
 ## What MCP actually adds
 
@@ -84,6 +85,11 @@ That is a fragile way to build a developer workflow.
 If the MCP depends on internal network access, a temporary auth state, or any
 other condition that can change during the session, it is already one failure
 away from becoming annoying. Not elegant. Annoying.
+
+MCP still has work to do around server initialization and lifecycle
+management. The fragile part is not the protocol itself; it is the stale
+assumptions that accumulate over time when the server expects the session to
+stay valid.
 
 ## The double-server problem
 
@@ -140,19 +146,25 @@ The CLI version is a cleaner fit for the kind of work agents do well when they
 can inspect output directly and rerun commands without depending on an external
 session manager to preserve state correctly.
 
-That lines up with terminal benchmarks too. OpenAI’s GPT-5.5 release reports
-82.7% on Terminal-Bench 2.0, while the same table shows 69.4% for Claude Opus
-4.7 and 68.5% for Gemini 3.1 Pro. Those numbers move over time, but the point
-does not: terminal competence is good enough that a CLI is often the right
-default surface.
+That is also why terminal competence matters. Terminal-Bench exists because the
+question is no longer whether models can use terminals at all, but how well
+they can do it without extra glue. A year ago a lot of agents still needed
+special tool-use scaffolding. Now many models can drive local programs directly,
+which makes an MCP hop unnecessary for a lot of local automation.
+
+That does not make MCP pointless. It means the benchmark now supports a more
+specific claim: MCP is no longer the default integration point for every agent
+task, but it still matters when it reduces the cognitive load of web API
+surfaces that were never designed for agents in the first place.
 
 ## REST still matters
 
 REST is still the default inter-app contract for a reason.
 
-It is stable, widely understood, and easy to share across teams and tools. It
-also gives CLIs and MCP servers something solid to sit on top of when they need
-to call the real application.
+It is stable, widely understood, and easy to share across teams and tools. A
+CLI can wrap it, an MCP can wrap it, and the app can still keep one contract for
+other systems to depend on. That matters when you care about the whole app
+staying coherent instead of only one protocol-shaped slice of it.
 
 That is the architecture I trust more:
 
@@ -163,7 +175,7 @@ That is the architecture I trust more:
     something.
 
 REST does not disappear because MCP exists. If anything, MCP usually depends on
-REST, or on the same underlying functions that REST already reaches.
+REST or on the same underlying functions that REST already reaches.
 
 ## When MCP is worth it
 
@@ -173,6 +185,8 @@ I would use it when:
 
 - the tool surface is shared across a team of agents,
 - the server can be run as streamable HTTP and kept stable,
+- the underlying app has a lot of functionality but a weak or incomplete web
+    API for agent use,
 - the protocol helps consolidate a lot of useful capabilities into one
     understandable interface,
 - and the maintenance cost is justified by the reuse.
@@ -213,5 +227,3 @@ where it belongs: in the codebase, not in the wrapper.
 - MCP prompts: <https://modelcontextprotocol.io/docs/concepts/prompts>
 - Playwright MCP: <https://playwright.dev/docs/getting-started-mcp>
 - Playwright CLI: <https://github.com/microsoft/playwright-cli>
-- Terminal-Bench 2.0 / GPT-5.5 benchmark table:
-    <https://openai.com/index/introducing-gpt-5-5/>
