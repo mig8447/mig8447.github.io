@@ -23,6 +23,11 @@ to it.
   That answer should shape the opening and the conclusion.
 - Use titles that create curiosity and make the right reader want to open the
   post, but only if the article fully justifies the promise.
+- Add a short table of contents after the opening paragraph and `<!--more-->`
+  marker in every post.
+- Treat title/body fit as a first-class review loop. If the title is weaker or
+  broader than the draft can justify, tighten the title before polishing the
+  body.
 - Do not use clickbait, hype, or marketing language in the body of the post.
 - Make sure the article narrative is cohesive. Each section should build on the
   one before it instead of reading like disconnected notes.
@@ -46,6 +51,8 @@ to it.
 - Generate blog posts one by one. Do not start the next post until the current
   one has been drafted, reviewed, and its teaser assets are ready.
 - Iterate first on the blog post titles until the direction is locked.
+- During title iteration, keep the loop tight: test whether the title is
+  justified by the current body before making the body more elaborate.
 - Iterate next on the post content, using the repository guidance to shape the
   draft and revise it until the user is happy.
 - Only generate or refine teaser and image assets after the post content has
@@ -53,6 +60,8 @@ to it.
 - Treat teaser generation as a late-stage step, not part of the first content
   draft.
 - Publish only after the title, content, and teaser assets are all settled.
+- Do not push a post until the title, body, and teaser are agreed upon and the
+  teaser assets are in place.
 
 ### Front Matter
 
@@ -76,6 +85,15 @@ to it.
   tools, workflows, or approaches.
 - Wrap Mermaid blocks with `<!-- markdownlint-disable MD013 -->` and
   `<!-- markdownlint-enable MD013 -->` when needed.
+- Start Mermaid blocks with a leading `%%` comment that reads like the
+  diagram: make the branch logic explicit with `if X, then Y; otherwise Z`
+  wording instead of a vague prose caption.
+- Write that Mermaid comment as plain prose that describes the loop in the
+  same language you would use in the post body. For example: “Spec-driven
+  development combines Waterfall's upfront specification with Agile's
+  feedback loop. Spec-driven development describes the outcome, puts AI to
+  implement code to achieve that outcome, humans review and propose changes,
+  and the cycle repeats.”
 - Keep the tree short and action-oriented.
 - Make the node labels answer the decision in plain language.
 
@@ -96,6 +114,9 @@ to it.
 - Be explicit about the default choice.
 - State when two approaches can work together.
 - Note when a technique is a poor fit, not just when it is a good fit.
+- When building or documenting CLI tools, polish the help for agents: include
+  examples, use cases, or a companion skill so the CLI stays task-oriented and
+  captures the practical value that MCP would otherwise add.
 - Prefer concise prose and short lists over long paragraphs.
 - Open with a concrete tension, tradeoff, or decision instead of a generic
   summary.
@@ -145,6 +166,9 @@ to it.
   images.
 - After image generation, inspect the candidate render before copying it into
   the repo. Do not assume the latest file is the right one.
+- For teaser, hero, and OpenGraph assets, use `imagegen` output as the source
+  of truth. Do not replace that workflow with hand-built SVGs for final post
+  artwork.
 - Use `prompt-ai-comparison-teaser.md` for AI-vs-AI or tool-vs-tool posts.
 - Use `prompt-ai-topic-teaser.md` for single-subject AI posts such as resumes,
   how-to guides, or other topic-only articles.

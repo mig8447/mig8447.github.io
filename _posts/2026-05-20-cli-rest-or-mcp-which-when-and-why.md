@@ -14,6 +14,16 @@ The real problem is choosing a surface that fragments the app instead of
 making it easier to use.
 <!--more-->
 
+## On This Page
+
+- [TLDR](#tldr)
+- [What MCP actually adds](#what-mcp-actually-adds)
+- [Why CLIs keep winning](#why-clis-keep-winning)
+- [REST still matters](#rest-still-matters)
+- [When MCP is worth it](#when-mcp-is-worth-it)
+- [My default rule](#my-default-rule)
+- [Resources](#resources)
+
 ## TLDR
 
 Use the simplest surface that fits the job.
